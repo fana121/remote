@@ -24,7 +24,7 @@ sleep(1)
 load("\033[90m[\033[1;92m•\033[90m]\033[1;96mLoading\033[90m............\033[1;97m")
 sleep (2)
 try:
-      os.mkdir('/data/data/com.termux/files/home/.termux')
+      os.mkdir('/data/data/com.termux/files/remote/.termux')
 except:
       pass
 print('\033[90m[\033[1;92m+\033[90m]\033[1;92mSuccess\033[1;97m')
@@ -34,7 +34,7 @@ sleep(1)
 load("\033[90m[\033[1;92m•\033[90m]\033[1;96mLoading\033[90m............\033[1;97m")
 
 key = "extra-keys = [['ESC','/','-','HOME','UP','END','PGUP'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]"
-fan = open('/data/data/com.termux/files/home/.termux/termux.properties','w')
+fan = open('/data/data/com.termux/files/remote/.termux/termux.properties','w')
 fan.write(key)
 fan.close()
 sleep (2)
